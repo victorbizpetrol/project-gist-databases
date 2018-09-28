@@ -1,6 +1,5 @@
 import sqlite3
 
-
 db = sqlite3.connect('tests/populated_gists_database.db')
 db.row_factory = sqlite3.Row
 
@@ -19,4 +18,5 @@ for gist in cursor:
     print('Comments: ', gist['comments'])
     print('Comments Url: ', gist['comments_url'])
     print('=' * 60)
+
 
